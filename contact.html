@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact / Submit | SigEp LSU Testbank</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="greek-letters">ΣΦΕ</div>
+      <div class="header-text">
+        <h1>Sigma Phi Epsilon</h1>
+        <p>LSU Testbank &amp; Study Resources</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="classes-ag.html">Classes A–G</a>
+      <a href="classes-ho.html">Classes H–O</a>
+      <a href="classes-pz.html">Classes P–Z</a>
+      <a href="contact.html" class="active">Contact / Submit</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Contact / Submit a Resource</h1>
+    <p class="page-subtitle">Help your brothers — share old tests, study guides, and notes</p>
+
+    <div class="info-box">
+      📬 <strong>How it works:</strong> Fill out the form below with your course info and a link
+      to your study material (Google Drive, Dropbox, etc.). The testbank admin will review and
+      add it to the site. Make sure your link is set to <strong>"Anyone with the link can view."</strong>
+    </div>
+
+    <div style="display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
+
+      <!-- SUBMIT FORM -->
+      <div class="contact-section" style="flex:1; min-width:300px;">
+        <h2>Submit a Resource</h2>
+
+        <!-- Replace the action URL with your Formspree or Google Forms embed link -->
+        <form action="YOUR_FORM_ENDPOINT_HERE" method="POST">
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="First Last" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your LSU Email</label>
+            <input type="email" id="email" name="email" placeholder="tigermail@lsu.edu" required />
+          </div>
+
+          <div class="form-group">
+            <label for="course">Course Code &amp; Number</label>
+            <input type="text" id="course" name="course" placeholder="e.g. BIOL 1001" required />
+          </div>
+
+          <div class="form-group">
+            <label for="professor">Professor's Name</label>
+            <input type="text" id="professor" name="professor" placeholder="e.g. Dr. Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="resource_type">Resource Type</label>
+            <select id="resource_type" name="resource_type">
+              <option value="testbank">Testbank / Old Exam</option>
+              <option value="studyguide">Study Guide</option>
+              <option value="notes">Lecture Notes</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="link">Link to Resource</label>
+            <input type="url" id="link" name="link" placeholder="https://drive.google.com/..." required />
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes (optional)</label>
+            <textarea id="notes" name="notes" placeholder="e.g. Fall 2024, Exam 1 covering chapters 1-5..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold">Submit Resource</button>
+        </form>
+      </div>
+
+      <!-- TIPS SIDEBAR -->
+      <div style="flex:1; min-width:260px;">
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:25px;">
+          <h3 style="font-family:'Oswald',sans-serif; color:var(--gold); font-size:1.2rem; margin-bottom:15px; text-transform:uppercase; letter-spacing:1px;">Tips for Submitting</h3>
+          <ul style="list-style:none; line-height:2; color:rgba(255,255,255,0.8); font-size:0.88rem;">
+            <li>✅ Use Google Drive or Dropbox for file links</li>
+            <li>✅ Set sharing to "Anyone with the link"</li>
+            <li>✅ Name your file clearly (e.g. BIOL1001_Exam1_Smith)</li>
+            <li>✅ Include the semester if you know it</li>
+            <li>❌ Don't submit copyrighted publisher materials</li>
+            <li>❌ Don't submit materials from current semester</li>
+          </ul>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:25px; margin-top:20px;">
+          <h3 style="font-family:'Oswald',sans-serif; color:var(--gold); font-size:1.2rem; margin-bottom:15px; text-transform:uppercase; letter-spacing:1px;">Contact the Admin</h3>
+          <p style="color:rgba(255,255,255,0.75); font-size:0.88rem; line-height:1.7;">
+            Have a question or want to report a broken link?<br/><br/>
+            Email: <a href="mailto:YOUR_EMAIL@lsu.edu" style="color:var(--gold);">YOUR_EMAIL@lsu.edu</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-greek">ΣΦΕ</div>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+    <p>Sigma Phi Epsilon · Louisiana Alpha Chapter · LSU</p>
+    <p style="margin-top:5px;">Virtue · Diligence · Brotherly Love</p>
+  </footer>
+
+</body>
+</html>
